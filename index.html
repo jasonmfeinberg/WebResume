@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="starting.css"/>
+		<link type="text/css" rel="stylesheet" href="jquery.mobile-1.4.4/jquery.mobile-1.4.4.css"/>
+		<script src="jquery-1.10.2.js"></script>
+		<script src="jquery.mobile-1.4.4/jquery.mobile-1.4.4.min.js"></script>
+		<script src="starting.js"> </script>
+		<title>Jason Feinberg's Resume</title>
+	</head>
+	
+	
+	<body>		
+		<div id="menuarea" data-role="header">
+			<table id="menu">
+			<tr>
+				<td class="otherpage"><a href="#home">Home</a></td>
+				<td class="otherpage"><a href="#education">Education</a></td>
+				<td class="otherpage"><a href="#work">Work Experience</a></td>
+				<td class="otherpage"><a href="#skills">Skills</a></td>
+				<td class="otherpage"><a href="#contact">Contact</a></td>
+			</tr>
+			</table>
+		</div>
+
+		<div data-role="page" id="home">
+			<img id="home-bg" src="jason.jpg" class="bgwidth bg"/>
+			<div class="page-wrap" id="home-text" style="text-align:center;">
+				<h1> Welcome to Jason's web resume.
+				</h1>
+
+			</div>
+		</div>
+
+		<div data-role="page" id="education">
+			<img id="education-bg" src="Haverford-Founders-Hall.jpg" class="bgwidth bg"/>
+			<div class="page-wrap" id="education-text">
+				<h1 style="text-align:center;"> Haverford College
+				</h1>
+				<p> Jason plans to graduate Haverford College in May 2016 with a Bachelor of Science in Computer Science and Mathematics.</p>
+				<p>Below is a list of academic skills Jason learned during his time at Haverford.
+				</p>
+				<table id="academicskilltable">
+					<tr>
+					<td>
+						<ul><li>Programming Languages</li>
+						<li>Data Structures</li>
+						<li>Data Science and Visualization</li>
+						<li>Algorithms</li>
+						<li>Information and Coding Theory</li>
+						<li>Computer Architecture</li></ul>
+					</td><td>
+						<ul><li>Multivariable Calculus</li>
+						<li>Advanced Algebra</li>
+						<li>Statistics</li>
+						<li>Linear Algebra</li>
+						<li>Advanced Combinatorics</li>
+						<li>Cryptography</li></ul>
+					</td>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+
+		<div data-role="page" id="work">
+			<img id="work-bg" src="work.png" class="bgwidth bg"/>
+			<div class="page-wrap" id="work-text">
+				<h1 class="job-company"> AT&T Inc.</h1> 
+				<h3 class="job-location">Middletown, NJ </h3>
+				<h2 class="job-role"> Mobile Application Developer </h2>
+				<h3 class="job-date"> June 2014 - August 2014 </h3>
+				<ul class="job-details">
+				 <li>Worked as part of an Agile team implementing 7 new user stories for a new internal sales application using HTML5, jQuery, and Java</li>
+				 <li>Diagnosed and resolved code defects in a 100,000+ line code base </li>
+				 <li> Led a team of interns designing a mobile application prototype for managing flexible workspaces </li></ul>
+					<h2 class="job-role">Mobile Application Designer/Modeler </h2>
+					<h3 class="job-date">June 2013-August 2013 </h3>
+					<ul class="job-details"> 
+						<li> Worked with clients to determine requirements for <i>Planit</i>, an internal corporate mobile application </li>
+						<li> Created working models for a mobile application (using IBM iRise requirements visualization software) </li>
+						<li> Created iconography with vector and bitmap images, logos, splash screens, and buttons </li>
+						<li> Member of the winning 4-person team for the AT&T Internal WebRTC Hackathon.  Designed and implemented <i>SmartMic</i>, a different, innovative mobile application. <li> <a href="http://www.att.com/gen/press-room?pid=25369"> Press Release about <i>SmartMic</i> and <i>Planit</i></a> </li> <li> <a href="https://www.youtube.com/watch?v=sv96FL4Yi2Q"> Video Showcasing <i>SmartMic</i> and <i>Planit</i></a></li>
+						</ul>
+
+				<h1 class="job-company">Haverford College </h1> 
+				<h3 class="job-location"> Haverford, PA	</h3>
+					<h2 class="job-role">Computer Science Teaching Assistant </h2>
+					<h3 class="job-date"> September 2014 - Present </h3>
+					<ul class="job-details"><li>Hired by faculty to assist students in the introductory computer science course</li></ul>
+					<h2 class="job-role">Computer Science Peer Tutor </h2>
+					<h3 class="job-date"> October 2013 - Present </h3>
+					<ul class="job-details"><li>Nominated by faculty to provide tutoring support to other students</li></ul>
+					<h2 class="job-role">IITS Student ProDesk Assistant</h2>
+					<h3 class="job-date"> September 2012 - Present </h3>
+					<ul class="job-details">
+					<li>Helped professors and students diagnose and resolve computer problems</li>
+					<li>Installed new computer hardware and software</li>
+					</ul>
+					<h2 class="job-role">Lab Manager</h2>
+					<h3 class="job-date"> October 2012 - Present </h3>
+					<ul class="job-details"><li>Responsible for the upkeep of 30 on-campus computers</li></ul>
+
+				<h1 class="job-company">Temple Rodeph Torah</h1> 
+				<h3 class="job-location"> Marlboro, NJ </h3>
+					<h2 class="job-role">Website Creation and Administration</h2>
+					<h3 class="job-date"> June 2012 - August 2012 </h3>
+					<ul class="job-details">
+					<li>Designed and implemented a new, cleaner website (www.trt.org) using the Joomla 
+				content management system</li>
+					<li>Managed MySQL databases for the website</li>
+					<li>Used FogBugz for project coordination and tracking</li>
+					</ul>
+			</div>
+		</div>
+		<div data-role="page" id="skills">
+			<img id="skills-bg" src="skills.png" class="bgwidth bg"/>
+			<div class="page-wrap" id ="skills-text">
+				<table id="compskilltable">
+				<tr><td>
+					<ul>
+					<li>Javascript</li>
+					<li>jQuery</li>
+					<li>HTML</li>
+					<li>Python</li>
+					<li>CSS</li>
+					<li>C++</li>
+					<li>C#</li>
+
+					</ul>
+				</td><td>
+					<ul>
+					<li>Java</li>
+					<li>Scheme</li>
+					<li>Vector &amp Raster Image Creation/Manipulation </li>
+					<li>Microsoft Excel</li>
+					<li>Microsoft Word</li> 
+					<li>Microsoft PowerPoint</li></ul>
+				</td><td>
+					<ul><li>MySQL</li>
+					<li>PHP</li>
+					<li>IBM iRise</li>
+					<li>Joomla</li>
+					<li>Fogbugz</li>
+					<li>iWeb</li></ul>
+				</td></tr>
+		       
+				</table>
+			</div>	
+		</div>
+
+		<div data-role="page" id="contact">
+			<img id="contact-bg" src="contact.jpg" class="bgwidth bg"/>
+			<div class="page-wrap" id="contact-text">
+				<p>Email: jasonmfeinberg [at] gmail [dot] com</p>
+				<p><a href="Jason_Feinberg_Resume.pdf" download> Download PDF Resume </a></p>
+			</div>
+		</div>
+	</body>
+</html>
