@@ -33,4 +33,33 @@ $(window).load(function() {
 		$('.currentpage').removeClass('currentpage').addClass('otherpage');
 		$this.addClass('currentpage').removeClass('otherpage');
 	});
+
+	function detectmob() { 
+		if( navigator.userAgent.match(/Android/i)
+		 || navigator.userAgent.match(/webOS/i)
+		 || navigator.userAgent.match(/iPhone/i)
+		 || navigator.userAgent.match(/iPad/i)
+		 || navigator.userAgent.match(/iPod/i)
+		 || navigator.userAgent.match(/BlackBerry/i)
+		 || navigator.userAgent.match(/Windows Phone/i)
+		){
+			return true;
+		}
+		else {
+		    return false;
+		}
+	}
+
+	$('#close-popup').on('click',function(){
+		$popup = $('#popupDialog');
+		$popup.popup('close');
+		$popup.addClass('hidden');
+	});
+
+	if(detectmob()){
+		$popup = $('#popupDialog');
+		$popup.popup();
+		$popup.popup('open');
+		$popup.removeClass('hidden');
+	}
 });
