@@ -28,7 +28,7 @@ $(window).load(function() {
 
 	$('#'+currPageId+'-link').addClass('currentpage').removeClass('otherpage');
 
-	$('.otherpage').on('click',function(){
+	$(document).on('click','.otherpage',function(){
 		$this=$(this);
 		$('.currentpage').removeClass('currentpage').addClass('otherpage');
 		$this.addClass('currentpage').removeClass('otherpage');
